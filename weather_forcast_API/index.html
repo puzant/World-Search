@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+
+<body ng-controller="ctrl">
+
+    <div class="container animated fadeIn" ng-cloak>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="wrapper">
+
+                    <div class="nav">
+
+                        <a class="back" href="../search.php"><i class="fa fa-arrow-left fa-2x" style="float:left;color:#fff;padding-left:1px;cursor:pointer;" aria-hidden="true"></i></a>
+
+                        <h3>Current Weather</h3>
+                        <a class="d" href="#/WF">
+                            <h3>1 Week forecast</h3>
+                        </a>
+                        <a class="d" href="#/DF">
+                            <h3>Forecast Weather</h3>
+                        </a>
+
+                        <a class="d" href="#/ASTR">
+                            <h3>Astronomy</h3>
+                        </a>
+
+                        <hr>
+                    </div>
+
+                    <img ng-src="{{icon}}" alt="">
+                    <span class="">Status: {{text}}</span>
+                    <span>Country: {{country}}</span>
+                    <span>Local Time: {{localtime}}</span>
+                    <span>Name: {{name}}</span>
+                    <span>Region: {{region}}</span>
+                    <span>feels like: {{feelslike}}°C</span>
+
+                    <br>
+
+                    <ng-view></ng-view>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

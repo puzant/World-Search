@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sansita');
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif, Arial;
+background-image: url('http://www.userlogos.org/files/backgrounds/Mafia_Penguin/Map1280x800.jpg');
+background-size: cover;
+height: 100%;
+}
+
+p {
+  font-family: 'Lora';
+}
+
+nav img {
+  float: left;
+  width: 5%;
+  height: 40px;
+  margin-left: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #555;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #aaafb7;
+}
+
+
+
+header h1 {
+  margin-left: 10px;
+  padding-top: 10px;
+  font-family: 'Slabo 27px';
+}
+
+section {
+  width: 80%;
+  margin-left: 10px;
+}
+
+section h1 {
+  font-family: 'Slabo 27px';
+}
+
+section p {
+  padding-top: 5px;
+}
+
+.start {
+  margin-top: -10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.start h3 {
+  font-style: italic;
+  font-family: 'Slabo 27px';
+}
+
+.start a {
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #111;
+  padding: 10px 20px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+.start a:hover {
+  background-color: #e7e7e7;
+}
+
+
+#page2 h3 {
+  font-style: italic;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+#page2 form {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+#page2 form  input {
+  width: 40%;
+  padding: 3px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  transition: 0.4s;
+}
+
+#page2 form  input:focus {
+  border: 2px solid #ccc;
+}
+
+#page2 form  button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#page2 main {
+  margin-top:280px;
+  clear: both;
+  font-size: 23px;
+  font-family: 'Open Sans Condensed';
+  height: auto;
+font-style: italic;
+}
+
+
+#page2 .quick-access a {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+    margin: 4px;
+    transition: 0.5s;
+}
+
+#page2 .quick-access a:hover {
+    background-color: #fff;
+    color: #4caf50;
+}
+
+.quick-access {
+    margin-top: -270px;
+  text-align: center;
+}
+
+.map {
+    margin-top: 3px;
+border-radius: 9px;
+}
+
+ #googlemap {
+height: 300px;
+     margin-left:4px;
+     width: 99%;
+     transition: 0.5s;
+     border: 2px solid #ccc;
+}
+
+#googlemap:hover {
+    height: 500px;
+}
+
+
+hr {
+  border: 0;
+  margin: 2.60em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.fade {
+  height: 1px;
+  color: red;
+  background-image: linear-gradient(90deg, rgba(255, 0, 0, 0), red 50%, rgba(255, 0, 0, 0) 100%);
+}
+
+.icon-bar {
+  margin-right: 10px;
+  float: left;
+  width: 50px;
+  text-align: center;
+  background-color: #555;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.icon-bar a {
+padding: 10px;
+display: block;
+transition: all 0.3s ease;
+color: white;
+font-size: 22px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*   the side nav code */
+#page2 .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+#page2 .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  margin-top: 18px;
+  transition: 0.3s;
+}
+
+#page2 .sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+#page2 .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#page2 .web-content {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #111;
+  text-align: justify;
+  font-size: 17px;
+  width: 56%;
+}
+
+#page2 .social-media {
+  position: relative;
+  top: 250px;
+  right: 10px;
+  display: flex;
+  background-color: #111;
+}
+
+/*
+#page2 .social-media .fa-facebook:hover {
+  color: #3b5998;
+}
+
+#page2 .social-media .fa-linkedin:hover {
+  color: ##0077B5;
+}
+
+#page2 .social-media .fa-instagram:hover {
+  color: #fb3958;
+}
+
+#page2 .social-media .fa-youtube:hover {
+  color: #bb0000;
+}
+*/
+
+
+
+#page2 .social-media a:hover {
+background-color: #111;
+}
+/*   ********************  no results page code css  ********************* */
+#page3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#pag3 p {
+  font-size: 15px;
+}
+
+#page3 a {
+  text-decoration: none;
+  color: #111;
+  font-size: 24px;
+}
+
+#page3 a:hover {
+  border-bottom: 2px solid #4caf50;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #fff;
+    background-color:#4caf50;
+}
+
+
+.sidenav .btn-side a:hover {
+  color: #fff;
+  background-color: #111;
+}

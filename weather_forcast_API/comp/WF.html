@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
+
+
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th,
+        td {
+            padding: 8px;
+            margin: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        a {
+            color: #fff;
+        }
+        
+        a:hover {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        a:focus {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+         .IMG {
+            width: 20%;
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div style="overflow-x:auto;">
+    <table class="animated fadeIn">
+            <th>Day</th>
+            <th>Tempreture</th>
+            <th>Condition</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+            <tr>
+                <td>{{date1}}</td>
+                <td>{{temp1}}</td>
+                    <td><img class="IMG" ng-src="{{con1}}"></td>
+                <td>{{humidity1}}</td>
+                <td>{{windspeed1}}</td>
+            </tr>
+            <tr>
+                <td>{{date2}}</td>
+                <td>{{temp2}}</td>
+                <td><img class="IMG" ng-src="{{con2}}"></td>
+                <td>{{humidity2}}</td>
+                <td>{{windspeed2}}</td>
+            </tr>
+            <tr>
+                <td>{{date3}}</td>
+                <td>{{temp3}}</td>
+                <td><img class="IMG" ng-src="{{con3}}"></td>
+                <td>{{humidity3}}</td>
+                <td>{{windspeed3}}</td>
+            </tr>
+            <tr>
+                <td>{{date4}}</td>
+                <td>{{temp4}}</td>
+                <td><img class="IMG" ng-src="{{con4}}"></td>
+                <td>{{humidity4}}</td>
+                <td>{{windspeed4}}</td>
+            </tr>
+            <tr>
+                <td>{{date5}}</td>
+                <td>{{temp5}}</td>
+                <td><img class="IMG" ng-src="{{con5}}"></td>
+                <td>{{humidity5}}</td>
+                <td>{{windspeed5}}</td>
+            </tr>
+            <tr>
+                <td>{{date6}}</td>
+                <td>{{temp6}}</td>
+                <td><img class="IMG" ng-src="{{con6}}"></td>
+                <td>{{humidity6}}</td>
+                <td>{{windspeed6}}</td>
+            </tr>
+            <tr>
+                <td>{{date7}}</td>
+                <td>{{temp7}}</td>
+                <td><img class="IMG" ng-src="{{con7}}"></td>
+                <td>{{humidity7}}</td>
+                <td>{{windspeed7}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+</body>
+
+</html>

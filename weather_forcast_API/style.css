@@ -1,0 +1,108 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body {
+    background-image: url('http://aurora-awards.com/wp-content/uploads/2017/05/sky-wallpapers-wallpaper-590c92b2c6480.jpg');
+    	animation: animatedBackground 30s linear infinite;
+    background-repeat: no-repeat;
+    
+
+
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.wrapper {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
+    /* IE6–IE9 */
+    zoom: 1;
+    padding: 20px;
+    height: auto;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    width: 78%;
+    color: #111;
+}
+
+button {
+    margin-left: 10px;
+}
+
+span {
+    display: block;
+    margin: 10px;
+    font-size: 15px;
+}
+
+img, .status {
+    float: right;
+        width: 8%;
+
+}
+
+.status {
+    margin-top: 22px;
+}
+
+.nav h3 {
+    display: inline;
+    margin: 10px;
+}
+
+.d {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.d:hover {
+    color: #ccc; 
+    text-decoration: none;
+}
+
+.d:focus {
+    color: #ccc;
+    text-decoration: none;
+}
+
+p {
+    font-weight: 100;
+    display: block
+}
+
+.text {
+    display: block;
+}
+
+.form-control {
+    float: right;
+    color:#111;
+    width: 13%;
+    height: 30px;
+}
+
+label {
+    float: right;
+    font-size: 17px;
+    margin: 2px 5px;
+    padding: 2px;
+}
+
+img {
+    width: 9%;
+}

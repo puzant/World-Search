@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+#records table {
+  font-family: arial;
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #ccc;
+}
+
+#records  td, #records th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#records tr:nth-child(even){background-color: #f2f2f2;}
+#records tr:hover {background-color: #ddd;}
+
+#records th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+}
+
+.fa-arrow-left {
+margin-bottom: 8px;
+margin-top: 11px;
+float: left;
+}
+
+input[type=text] {
+  width: 85%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: white;
+  padding: 8px 20px 8px 10px;
+  transition: width 0.4s ease-in-out;
+  color: #4caf50;
+  margin-left: 22px;
+  margin-bottom: 20px;
+}
+
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 11px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #4CAF50;
+  border: none;
+  margin-left: 10px;
+}
