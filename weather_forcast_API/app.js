@@ -1,3 +1,4 @@
+//jquary code 
 $('.glyphicon').hide();
 $('.wrapper').hover(
 function(){
