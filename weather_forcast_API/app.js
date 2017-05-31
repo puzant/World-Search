@@ -7,9 +7,8 @@ function(){
 var app = angular.module("app", ['ngRoute']);
 
 app.controller("ctrl", function ($scope, $http) {
-    $scope.city = 'paris';
+
     $http.get("http://api.apixu.com/v1/current.json?key=07059d7ff3db432bb99153627172305&q=london").then(function (res) {
-        console.log(res.data);
 
         $scope.country = res.data.location.country;
         $scope.localtime = res.data.location.localtime;
@@ -18,6 +17,9 @@ app.controller("ctrl", function ($scope, $http) {
         $scope.icon = res.data.current.condition.icon;
         $scope.text = res.data.current.condition.text;
         $scope.feelslike = res.data.current.feelslike_c;
+                console.log(res.data);
+
+
 
     });
 

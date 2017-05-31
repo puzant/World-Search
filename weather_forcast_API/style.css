@@ -149,3 +149,16 @@ img {
     transition: 0.5s;
     border: 1px solid #fff;
 }
+
+
+.form-control {
+    width: 34%;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.form-control option {
+    color: #111;
+    font-size: 15px;
+}
+
