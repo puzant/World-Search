@@ -1,11 +1,12 @@
-$('i').hide();
+$('.glyphicon').hide();
 $('.wrapper').hover(
 function(){
-    $('i').show(700)
+    $('.glyphicon').show(700)
 });
 var app = angular.module("app", ['ngRoute']);
 
 app.controller("ctrl", function ($scope, $http) {
+    $scope.city = 'paris';
     $http.get("http://api.apixu.com/v1/current.json?key=07059d7ff3db432bb99153627172305&q=london").then(function (res) {
         console.log(res.data);
 

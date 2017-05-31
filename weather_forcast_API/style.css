@@ -1,19 +1,25 @@
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
 }
 
 body {
     background-image: url('http://aurora-awards.com/wp-content/uploads/2017/05/sky-wallpapers-wallpaper-590c92b2c6480.jpg');
-    	animation: animatedBackground 30s linear infinite;
+    animation: animatedBackground 30s linear infinite;
     background-repeat: no-repeat;
-    
-
-
 }
 
 @keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
 }
 
 .wrapper {
@@ -28,19 +34,7 @@ body {
     color: #fff;
     border-radius: 5px;
     width: 100%;
-    margin: 20px auto;
-}
-
-input[type="text"] {
-    border: none;
-    padding: 6px;
-    border-radius: 10px;
-    width: 78%;
-    color: #111;
-}
-
-button {
-    margin-left: 10px;
+    margin: 10px auto;
 }
 
 span {
@@ -49,10 +43,10 @@ span {
     font-size: 15px;
 }
 
-img, .status {
+img,
+.status {
     float: right;
-        width: 8%;
-
+    width: 8%;
 }
 
 .status {
@@ -71,7 +65,7 @@ img, .status {
 }
 
 .d:hover {
-    color: #ccc; 
+    color: #ccc;
     text-decoration: none;
 }
 
@@ -89,13 +83,6 @@ p {
     display: block;
 }
 
-.form-control {
-    float: right;
-    color:#111;
-    width: 13%;
-    height: 30px;
-}
-
 label {
     float: right;
     font-size: 17px;
@@ -105,4 +92,60 @@ label {
 
 img {
     width: 9%;
+}
+
+.navbar {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ccc;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    color: #ccc;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #ccc;
+}
+
+.navbar-default .navbar-brand:focus {
+    color: #ccc;
+}
+
+.glyphicon {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    float: left;
+    position: absolute;
+    left: -25px;
+    top: 4px;
+    transition: 0.5s;
+}
+
+.glyphicon:hover {
+    color: #ccc;
+}
+
+.wrapper-2 {
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.5s;
+    border: 1px solid #fff;
 }

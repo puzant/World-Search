@@ -6,6 +6,8 @@ include('connect.php');
 
 <head>
     <title>world search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Latest compiled and minified CSS -->
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -15,27 +17,27 @@ include('connect.php');
 </head>
 
 <body id="page2">
-                <nav>
-                    <ul>
-                        <div id="mysidenav" class="sidenav">
-                            <div class="btn-side"><a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a></div>
-                            <a href="weather_forcast_API/index.html">Weather</a>
-                            <a href="gallery.html">Gallery</a>
-                            <a href="index.php">About</a>
-                            <a href="">contact</a>
-                            <div class="social-media">
-                                <a href="https://www.facebook.com/puzant.bakjejian" class="fa fa-facebook"></a>
-                                <a href="https://github.com/puzant" class="fa fa-github"></a>
-                                <a href="https://www.linkedin.com/in/puzant-bakjejian-006426108/" class="fa fa-linkedin"></a>
-                                <a href="#" class="fa fa-instagram"></a>
+    <nav>
+        <ul>
+            <div id="mysidenav" class="sidenav">
+                <div class="btn-side"><a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a></div>
+                <a href="weather_forcast_API/index.html">Weather</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="index.php">About</a>
+                <a href="">contact</a>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/puzant.bakjejian" class="fa fa-facebook"></a>
+                    <a href="https://github.com/puzant" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/puzant-bakjejian-006426108/" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
 
-                            </div>
-                        </div>
-                        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars fa-lg" aria-hidden="true" style="margin-top:10px; margin-left:10px; color:#fff; float:left;"></i></span>
-                        <li><a href="login.php">Log in</li></a>
-                            <li><a href="signup.php">Sign Up</li></a>
-                    </ul>
-                </nav>
+                </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars fa-lg" aria-hidden="true" style="margin-top:10px; margin-left:10px; color:#fff; float:left;"></i></span>
+            <li><a href="login.php">Log in</li></a>
+                <li><a href="signup.php">Sign Up</li></a>
+        </ul>
+    </nav>
 
 
 

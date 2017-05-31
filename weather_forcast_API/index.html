@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,44 +14,39 @@
 </head>
 
 <body ng-controller="ctrl">
-
-    <div class="container animated fadeIn" ng-cloak>
+    <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 wrapper">
+                <nav class="navbar navbar-default">
 
-                <div class="wrapper">
+                    <div class="container-fluid">
 
-                    <div class="nav">
+                        <div class="navbar-header">
+                            <a href="../search.php"><span class="glyphicon glyphicon-arrow-left lg-4x"></span></a>
 
-                        <a class="back" href="../search.php"><i class="fa fa-arrow-left fa-2x" style="float:left;color:#fff;padding-left:1px;cursor:pointer;" aria-hidden="true"></i></a>
+                            <a class="navbar-brand" href="#">Current weather</a>
 
-                        <h3>Current Weather</h3>
-                        <a class="d" href="#/WF">
-                            <h3>1 Week forecast</h3>
-                        </a>
-                        <a class="d" href="#/DF">
-                            <h3>Forecast Weather</h3>
-                        </a>
-
-                        <a class="d" href="#/ASTR">
-                            <h3>Astronomy</h3>
-                        </a>
-
-                        <hr>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#/WF">1 Week forecast</a></li>
+                            <li><a href="#/DF">Forecast Weather</a></li>
+                            <li><a href="#/ASTR">Astronomy</a></li>
+                        </ul>
                     </div>
-
-                    <img ng-src="{{icon}}" alt="">
-                    <span class="">Status: {{text}}</span>
-                    <span>Country: {{country}}</span>
-                    <span>Local Time: {{localtime}}</span>
-                    <span>Name: {{name}}</span>
-                    <span>Region: {{region}}</span>
-                    <span>feels like: {{feelslike}}°C</span>
-
-                    <br>
-
-                    <ng-view></ng-view>
+                </nav>
+               <div class="wrapper-2">
+                <img ng-src="{{icon}}" alt="">
+                <span class="">Status: {{text}}</span>
+                <span>Country: {{country}}</span>
+                <span>Local Time: {{localtime}}</span>
+                <span>Name: {{name}}</span>
+                <span>Region: {{region}}</span>
+                <span>feels like: {{feelslike}}°C</span>
                 </div>
+                <br>
+
+                <ng-view></ng-view>
+
             </div>
         </div>
     </div>
